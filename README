@@ -1,0 +1,65 @@
+Hello, and welcome to the Flashless Flickr Slideshow!
+
+I created this project out of frustration of not being able to find a simple, intuitive slideshow for a Flickr photoset that does not use Flash.
+
+This slideshow uses AJAX calls to get the photos from a photoset and uses jQuery to style them into a slideshow.  The slideshow is customizable and has a simple interface with auto-generated thumbnail navigation, next button, previous button and pause/play toggle.
+
+Many thanks to malsup for creating the jQuery Cycle plugin (http://jquery.malsup.com/cycle/) that is used for the basic slideshow functionality.  You can learn all about transition effects and slideshow options on malsup's Cycle page, as well as the basic functionality of the slideshow.
+
+You can see the slideshow in action on my website (jdinu.com) under the "portfolio" link.  And all of the code for the slideshow (including the jQuery files needed) as well as instructions are provided in this GitHub repository.  To see the slideshow in action, visit my website (jdinu.com) and click on the 'portfolio' link at the top.
+
+e-mail or comment for instructions on customization of the slideshow, troubleshooting, or any suggestions.  
+
+---------------------
+HOW-TO
+---------------------
+
+**jquery v1.3.2 or later and the jCycle plugin are required for the slideshow to run.
+
+http://jquery.com/ to download the latest release of jQuery.
+
+http://jquery.malsup.com/cycle/ to download the latest release of jCycle.
+
+In order to use the slide show on your website, you need 3 components: slideshow.js, the HTML markup and image files and css, and the javascript function call.
+
+All of the slideshow logic is contained in slideshow.js and is commented in line as to provide the most straight forward instruction.
+
+Add this line: 
+
+slideshow('set_id', 3500);
+
+to your javascript external file or in the head between <script> tags.  Replace set_id with the ID of the photoset that you want to pull the photos from.  and the second parameter in the function call is the timeout in milliseconds between photo transitions (3500 milliseconds in this case).
+
+here is a copy of the HTML markup, but it is also included in the markup.txt file:
+
+<div id="slidecontainer">
+		<div id="controlcell" class="cell" ></div>
+		<div id="navcell" class="cell" ></div>
+		<div id="commoncell"></div>
+		<div id="controls"><img src="images/previous.gif" class="button" id="prev" />
+		<img src="images/pause.gif" class="button" id="toggle"  />
+		<img src="images/next.gif" class="button" id="next" /></div>
+
+		<ul id="cycle"></ul>
+		<div id="thumbs" ><ul id="nav"></ul></div>
+        <img src="images/play.gif" id="showButton" class="button"/>
+	</div>
+
+And copy the "images" folder to the same directory as your HTML file that is calling the slideshow.
+
+You must also add the CSS file to your <head>.  Look below for an example <head>.
+
+This RERADME will get a bit more detailed in the next few weeks with more options to customize the slideshow, but feel free to edit the code and add your own features, it is all open source and liscensed under the GPLv3 license (http://www.opensource.org/licenses/gpl-3.0.html). 
+
+--------------------
+Troubleshooting
+--------------------
+If the slideshow does not run properly, make sure the jquery <script> tag is first, then jcycle plugin <script> and finally slideshow.js <script> and your own external javascript files.
+
+ex: 
+
+<link rel="stylesheet" type="text/css" href="default.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="slideshow.js"></script>
+<script type="text/javascript" src="myscript.js"></script>
