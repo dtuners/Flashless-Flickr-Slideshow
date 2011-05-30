@@ -10,7 +10,7 @@ You can see the slideshow in action on my website (jdinu.com) under the "portfol
 
 e-mail (Design [at] jdinu [dot] com) or comment for instructions on customization of the slideshow, troubleshooting, or any suggestions.  
 
-*to change the background color, simply change the color of #cycle in the CSS.*
+*to change the background color, simply change - #cycle {... background: #0090FF; ...} - in the CSS.*
 
 ---------------------
 HOW-TO
