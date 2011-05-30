@@ -6,9 +6,11 @@ This slideshow uses AJAX calls to get the photos from a photoset and uses jQuery
 
 Many thanks to malsup for creating the jQuery Cycle plugin (http://jquery.malsup.com/cycle/) that is used for the basic slideshow functionality.  You can learn all about transition effects and slideshow options on malsup's Cycle page, as well as the basic functionality of the slideshow.
 
-You can see the slideshow in action on my website (jdinu.com) under the "portfolio" link.  And all of the code for the slideshow (including the jQuery files needed) as well as instructions are provided in this GitHub repository.  To see the slideshow in action, visit my website (jdinu.com) and click on the 'portfolio' link at the top.
+You can see the slideshow in action on my website (jdinu.com) under the "portfolio" link.  And all of the code for the slideshow (including the jQuery files needed) as well as instructions are provided in this GitHub repository. 
 
-e-mail or comment for instructions on customization of the slideshow, troubleshooting, or any suggestions.  
+e-mail (Design [at] jdinu [dot] com) or comment for instructions on customization of the slideshow, troubleshooting, or any suggestions.  
+
+*to change the background color, simply change the color of #cycle in the CSS.*
 
 ---------------------
 HOW-TO
