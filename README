@@ -32,7 +32,7 @@ slideshow('set_id', 3500);
 
 to your javascript external file or in the head between <script> tags.  Replace set_id with the ID of the photoset that you want to pull the photos from.  and the second parameter in the function call is the timeout in milliseconds between photo transitions (3500 milliseconds in this case).
 
-here is a copy of the HTML markup, but it is also included in the markup.txt file:
+here is a copy of the HTML markup, but it is also included in the markup.html file:
 
 <div id="slidecontainer">
 		<div id="controlcell" class="cell" ></div>
